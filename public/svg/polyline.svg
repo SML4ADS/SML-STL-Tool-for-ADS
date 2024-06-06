@@ -1,0 +1,5 @@
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+  <line x1="8" y1="24" x2="20" y2="12" stroke="black" />
+  <!-- 垂直于斜线的空心三角形 -->
+  <polygon points="24,8 22,14 18,10" fill="#000" />
+</svg>

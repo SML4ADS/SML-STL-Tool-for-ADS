@@ -1,0 +1,15 @@
+<svg height="32" width="24" xmlns="http://www.w3.org/2000/svg">
+    <!-- Head -->
+    <circle cx="12" cy="8" r="5" stroke="black" stroke-width="1" fill="white" />
+    
+    <!-- Body -->
+    <line x1="12" y1="13" x2="12" y2="18" style="stroke:black;stroke-width:1" />
+    
+    <!-- Arms -->
+    <line x1="3" y1="16" x2="12" y2="16" style="stroke:black;stroke-width:1" />
+    <line x1="21" y1="16" x2="12" y2="16" style="stroke:black;stroke-width:1" />
+    
+    <!-- Legs -->
+    <line x1="12" y1="18" x2="4" y2="26" style="stroke:black;stroke-width:1" />
+    <line x1="12" y1="18" x2="18" y2="26" style="stroke:black;stroke-width:1" />
+</svg>

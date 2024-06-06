@@ -1,0 +1,20 @@
+INCLUDE driving area type IS primary roads
+
+INCLUDE number of lanes IS 3
+
+INCLUDE driving area surface IS flooded, wet
+
+INCLUDE rainfall IS moderate rain
+
+INCLUDE wind IS fresh breeze
+
+INCLUDE vehicle speed IS 0, 12 m/s
+---
+
+GLOBALLY
+	distance between Ego and pedestrian IS GREATER THAN 1
+  
+FINALLY 
+  	Ego speed IS EQUAL TO 0 
+  AND 
+  	pedestrian speed IS NOT EQUAL TO 0

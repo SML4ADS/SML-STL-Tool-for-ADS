@@ -1,0 +1,146 @@
+.diagram-container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  foreignObject {
+    overflow: visible;
+
+    .uml-wrapper {
+      border-radius: 4px;
+    }
+
+    .uml-wrapper,
+    .class-wrapper {
+      position: relative;
+      word-wrap: break-word;
+      background-color: #fff;
+
+      .uml-head,
+      .class-head {
+        text-align: center;
+        line-height: 39px;
+      }
+
+      .icon {
+        position: absolute;
+        left: 2px;
+        top: 2px;
+        height: 32px;
+        width: 32px;
+      }
+
+      .AI-component {
+        width: 32px;
+        height: 32px;
+        background-image: url("../../../../../public/svg/AIComp.svg");
+      }
+
+      .port {
+        width: 20px;
+        height: 20px;
+        border: 1px solid #000;
+        background-color: white;
+        position: absolute;
+        text-align: center;
+      }
+
+      .uml-wrapper-content {
+        overflow: hidden;
+        height: 100%;
+      }
+
+      .pleft {
+        top: calc(50% - 10px);
+        left: -10px;
+      }
+
+      .pright {
+        top: calc(50% - 10px);
+        right: -10px;
+      }
+
+      .ptop {
+        top: -10px;
+        left: calc(50% - 10px);
+      }
+
+      .pbottom {
+        bottom: -10px;
+        left: calc(50% - 10px);
+      }
+    }
+
+    .property {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .svg-wrapper {
+      width: 100%;
+      height: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .lf-dndpanel {
+    height: 100vh;
+    padding: 0 !important;
+    margin: 0 !important;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+
+    .lf-dnd-shape {
+      background-size: contain;
+    }
+  }
+
+  .lf-control {
+    .lf-control-import-xml {
+      background-image: url("../../../../../public/svg/export.svg");
+      transform: rotate(180deg);
+
+    }
+    .lf-control-export-xml {
+      background-image: url("../../../../../public/svg/export.svg");
+    }
+
+    .lf-control-export-img {
+      background-image: url("../../../../../public/svg/img.svg");
+    }
+
+    .lf-control-home {
+      background-image: url("../../../../../public/svg/home.svg");
+    }
+
+    .lf-control-save {
+      background-image: url("../../../../../public/svg/保存.svg");
+    }
+
+    .lf.value-dnd-shape {
+      background-size: contain;
+    }
+  }
+}
+
+.leaf-node,
+.parent-node {
+  display: inline-block;
+}
+
+.edit-properties {
+  .ant-tree-treenode {
+    height: 40px;
+    align-items: center;
+  }
+  .ant-tree-switcher {
+    align-self: auto;
+  }
+}

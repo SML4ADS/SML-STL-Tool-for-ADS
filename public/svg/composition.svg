@@ -1,0 +1,10 @@
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="8,24 9,19 14,18 13,23" fill="#000"/>
+  <line x1="14" y1="18" x2="24" y2="8" stroke="black" />
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M1,1 L4,4 L1,7 L7,4 Z" fill="black" />
+    </marker>
+  </defs>
+  <line x1="14" y1="18" x2="24" y2="8" stroke="black" marker-end="url(#arrow)" />
+</svg>
