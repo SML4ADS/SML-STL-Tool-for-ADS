@@ -32,7 +32,7 @@ python main.py
 - Starting the front-end server/packaging the front-end
 - Starting electron
 
-#### 前/后端开发
+#### Front/back-end development
 
 ```bash
 npm start
@@ -41,7 +41,7 @@ npm start
 npm run start-electron
 ```
 
-#### 前端预览、后端开发
+#### Front-end preview, back-end development
 
 ```bash
 npm run build # 前端打包
@@ -49,15 +49,15 @@ npm run build # 前端打包
 npm run start-electron-prod
 ```
 
-#### 打包
+#### Packaging
 
 ```bash
-npm run build # 前端打包
+npm run build # Front-end Packaging
 # copy electron-node/verifier/resources to electron-dist/electron-node/verifier/resources
-npm run build-electron # electron打包
+npm run build-electron # electron Packaging
 ```
 
-## 项目结构
+## Project structure
 
 ```txt
 /
@@ -72,36 +72,36 @@ npm run build-electron # electron打包
 │   ├── stl/                    STL generation
 │   ├── verifier/               UPPAAL
 │   └── video/                  Video Preview
-├── electron-preload/           electron通信桥
-│   └── preload.ts              桥接文件，连接主进程与渲染进程
+├── electron-preload/           electron communications bridge
+│   └── preload.ts              Bridge file that connects the main process to the rendering process
 ├── electron-python/
-│   ├── generatorTree/          数据生成行为树相关（未使用到
-│   ├── onlineMonitor/          STL在线监测相关
-│   ├── simulate/               **CARLA仿真相关**
-│   ├── visualization/          **地图可视化相关**
-│   └── main.py                 python环境入口文件
-├── public/                     前端静态资源（前端用到的图片可以存这里）
-├── resources/                  配置文件，无需变动
+│   ├── generatorTree/          Generating Behavioral Tree
+│   ├── onlineMonitor/          STL online monitoring
+│   ├── simulate/               **CARLA**
+│   ├── visualization/          **Map Visualization**
+│   └── main.py                 python environment entry file
+├── public/                     Front-end static resources
+├── resources/                  configuration file
 ├── src/
-│   ├── components/             前端核心组件
-│   │   ├── common/             第三方公共组件
-│   │   ├── content/            场景建模核心组件
-│   │   ├── extends/            扩展组件（扩展卡片接口）
-│   │   ├── header/             导航栏
-│   │   ├── modal/              对话框
-│   │   ├── sider/              侧边栏（场景管理）
-│   │   ├── Home.tsx/           场景建模入口文件
-│   │   └── Welcome.tsx/        欢迎界面入口文件
-│   ├── generator/              生成器，用于从extends中自动生成路由和卡片入口
-│   ├── model/                  场景建模用到的类型定义
-│   ├── store/                  场景建模用到的状态管理器（手写的Redux）
-│   ├── utils/                  工具函数
-│   ├── App.tsx/                总页面入口（挂载路由）
-│   ├── constants.ts            使用到的常量
-│   ├── extendEntry.tsx         自动生成的文件，无需变动
-│   ├── extendRouter.tsx        自动生成的文件，无需变动
-│   ├── index.tsx               前端入口（挂载React）
-│   └── react-app-env.d.ts      类型文件，用于提供主进程中的函数在前端的类型提示
+│   ├── components/             Front-end core components
+│   │   ├── common/             Third-Party Public Components
+│   │   ├── content/            Scene Modeling Core Components
+│   │   ├── extends/            Extended Components
+│   │   ├── header/             navigation bar
+│   │   ├── modal/              dialog box
+│   │   ├── sider/              side-bar
+│   │   ├── Home.tsx/           Scene modeling entry file
+│   │   └── Welcome.tsx/        Welcome Interface Portal File
+│   ├── generator/              Generator for automatically generating routes and card entries from extends
+│   ├── model/                  Type definitions used for scene modeling
+│   ├── store/                  State Managers for Scene Modeling
+│   ├── utils/                  instrumented function
+│   ├── App.tsx/                General Page Entry
+│   ├── constants.ts            Constants used
+│   ├── extendEntry.tsx         Automatically generated documents
+│   ├── extendRouter.tsx        Automatically generated documents
+│   ├── index.tsx               Front-end entry (mounting React)
+│   └── react-app-env.d.ts      Type files, to provide hints about the types of functions in the main process on the front end
 └── package.json
 ```
 
