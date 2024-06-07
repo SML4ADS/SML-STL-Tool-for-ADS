@@ -37,14 +37,14 @@ python main.py
 ```bash
 npm start
 # copy electron-node/verifier/resources to electron-dist/electron-node/verifier/resources
-# 先前的命令行不要关闭
+# Do not close the previous command
 npm run start-electron
 ```
 
 #### Front-end preview, back-end development
 
 ```bash
-npm run build # 前端打包
+npm run build # Front-end packaging
 # copy electron-node/verifier/resources to electron-dist/electron-node/verifier/resources
 npm run start-electron-prod
 ```
