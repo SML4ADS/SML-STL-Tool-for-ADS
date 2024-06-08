@@ -13,8 +13,7 @@ A tool for autonomous driving scenario modeling, simulation and analysis
 ### environment building
 
 ```bash
-git clone https://github.com/ECNUCPS1106/SML4ADS.js
-cd ./SML4ADS.js
+git clone https://github.com/SML4ADS/SML-STL-Tool-for-ADS.git
 npm i
 # Install the required python packages
 ```
