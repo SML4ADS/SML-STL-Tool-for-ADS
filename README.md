@@ -1,4 +1,4 @@
-# SML4ADS.js
+# SML&STL tool for ADS
 
 A tool for autonomous driving scenario modeling, simulation and analysis
 
